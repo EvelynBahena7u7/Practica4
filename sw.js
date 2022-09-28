@@ -1,7 +1,7 @@
 self.addEventListener('install',(event)=>{
     console.log('sw: Instalado');
     
-    const promiseCache= caches.open('cache-v1').then((cache)=>{
+    caches.open('cache-v1').then((cache)=>{
         return cache.addAll(
              [
                  '/',
@@ -16,9 +16,7 @@ self.addEventListener('install',(event)=>{
              ]
          );
      })
-   /*caches.keys().then((keys)=>{
-    console.log(keys);
-   })*/
+
     
 })
 
