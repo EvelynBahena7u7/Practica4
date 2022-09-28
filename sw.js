@@ -5,11 +5,11 @@ self.addEventListener('install',(event)=>{
         return cache.addAll(
              [
                  '/',
-                 '/Practica4/index.html',
-                '/Practica4/pages/suma.html',
-                '/Practica4/pages/resta.html',
-                '/Practica4/pages/multi.html',
-                '/Practica4/pages/divi.html',
+                 './index.html',
+                './pages/suma.html',
+                './pages/resta.html',
+                './pages/multi.html',
+                './pages/divi.html',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
 
