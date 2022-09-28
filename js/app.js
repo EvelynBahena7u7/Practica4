@@ -3,7 +3,7 @@ if(navigator.serviceWorker){
     if(url.toString().includes('localhost:8080')){
         navigator.serviceWorker.register('/sw.js');
     }
-    navigator.serviceWorker.register('https://evelynbahena7u7.github.io/Practica4//sw.js');
+    navigator.serviceWorker.register('https://evelynbahena7u7.github.io/Practica4/sw.js');
 }
 
 
