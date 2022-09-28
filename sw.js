@@ -2,7 +2,7 @@ self.addEventListener('install',(event)=>{
     console.log('sw: Instalado');
     
     caches.open('cache-v1').then((cache)=>{
-        return cache.addAll(
+        cache.addAll(
              [
                  '/',
                  '/index.html',
